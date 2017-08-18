@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PasswordEditText">
+        <attr name="pet_iconShow" format="integer"/>
+        <attr name="pet_iconHide" format="integer"/>
+        <attr format="reference" name="start"/>
+        <attr format="dimension" name="pad"/>
+    </declare-styleable>
+
+    <declare-styleable name="DragDropGirdView">
+        <attr name="fixed_type" format="boolean"/>
+        <attr name="anim_duration" format="integer"/>
+    </declare-styleable>
+
+</resources>

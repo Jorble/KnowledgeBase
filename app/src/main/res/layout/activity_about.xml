@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40px"
+        android:layout_above="@+id/bar_title_ll"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="极天信息"
+            android:textSize="@dimen/text_size1"
+            android:textColor="@color/text_black1"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="700px"
+            android:layout_marginTop="40px"
+            android:scaleType="fitXY"
+            android:src="@mipmap/pic_company"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:textColor="@color/text_black1"
+            android:textSize="@dimen/text_size2"
+            android:lineSpacingExtra="2dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/about_us"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="联系我们"
+            android:textSize="@dimen/text_size2"
+            android:textColor="@color/text_black1"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:textColor="@color/text_black1"
+            android:textSize="@dimen/text_size2"
+            android:lineSpacingExtra="3dp"
+            android:text="@string/contact"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/bar_title"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>

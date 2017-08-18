@@ -1,0 +1,41 @@
+<com.zhy.autolayout.AutoLinearLayout
+    android:id="@+id/bar_title_ll"
+    android:layout_width="match_parent"
+    android:layout_height="120px"
+    android:layout_alignParentBottom="true"
+    android:gravity="center_vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/theme_bg">
+
+    <include layout="@layout/divider_h"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        >
+
+    <ImageView
+        android:id="@+id/bar_back_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/selector_btn_back"/>
+
+    <TextView
+        android:id="@+id/bar_title_tv"
+        android:layout_width="500px"
+        android:layout_height="80px"
+        android:textSize="@dimen/text_size2"
+        android:textColor="@color/text_black2"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="标题"
+        />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

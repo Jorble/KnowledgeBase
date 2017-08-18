@@ -1,0 +1,7 @@
+<ImageView
+    android:id="@+id/iv_image_view"
+    android:layout_height="150dp"
+    android:layout_width="match_parent"
+    android:scaleType="centerCrop"
+    android:src="@mipmap/pic_placeholder"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

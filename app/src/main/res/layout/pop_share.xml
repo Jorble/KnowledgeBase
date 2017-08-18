@@ -1,0 +1,326 @@
+<com.zhy.autolayout.AutoLinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@color/theme_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <!-- 分享 -->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:text="分享到"
+            android:textSize="@dimen/text_size2"
+            android:textColor="@color/text_black2"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- 分享第1行 -->
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10px"
+            >
+
+            <!-- 微信好友 -->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/wx_share_ll"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_share_wx"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:text="微信好友"
+                    android:textColor="@color/text_black2"
+                    android:textSize="@dimen/text_size4"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <!-- 微信朋友圈 -->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/wxCircle_share_ll"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_share_wxcircle"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:text="微信朋友圈"
+                    android:textColor="@color/text_black2"
+                    android:textSize="@dimen/text_size4"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <!-- QQ好友 -->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/qq_share_ll"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_share_qq"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:text="QQ好友"
+                    android:textColor="@color/text_black2"
+                    android:textSize="@dimen/text_size4"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <!-- QQ空间 -->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/qZone_share_ll"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_share_qzone"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:text="QQ空间"
+                    android:textColor="@color/text_black2"
+                    android:textSize="@dimen/text_size4"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <!-- 分享第2行 -->
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:orientation="horizontal">
+
+            <!-- 新浪微博 -->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/wb_share_ll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_share_sina" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:text="新浪微博"
+                    android:textColor="@color/text_black2"
+                    android:textSize="@dimen/text_size4" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <!--  -->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <!--  -->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <!--  -->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <!-- 分割线 -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        android:layout_margin="30px">
+
+    </LinearLayout>
+
+    <!-- 菜单 -->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:orientation="vertical">
+
+        <!-- 菜单第1行 -->
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10px"
+            >
+
+            <!-- 举报-->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/tipoff_ll"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_action_tipoff"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:text="举报"
+                    android:textColor="@color/text_black2"
+                    android:textSize="@dimen/text_size4"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <!-- 复制链接 -->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/copyLink_ll"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_action_copylink"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:text="复制链接"
+                    android:textColor="@color/text_black2"
+                    android:textSize="@dimen/text_size4"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <!-- 订阅 -->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/subscribe_ll"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/subscribe_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_action_subscribe"/>
+                <TextView
+                    android:id="@+id/subscribe_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:text="订阅"
+                    android:textColor="@color/text_black2"
+                    android:textSize="@dimen/text_size4"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <!-- 收藏 -->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/favor_ll"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/favor_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_action_favor"/>
+                <TextView
+                    android:id="@+id/favor_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:text="收藏"
+                    android:textColor="@color/text_black2"
+                    android:textSize="@dimen/text_size4"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <!-- 菜单第2行 -->
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10px"
+            >
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:text="取消"
+                android:textColor="@color/text_black2"
+                android:textSize="@dimen/text_size2"
+                android:background="@drawable/bg_btn_frame"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- 底部导航 -->
+    <dimen name="main_tab_item_text">12sp</dimen>
+    <!-- 横向滑动标签 -->
+    <dimen name="home_tab_item_text">16sp</dimen>
+
+    <!-- 统一字体大小 -->
+    <dimen name="text_size1">18sp</dimen>
+    <dimen name="text_size2">16sp</dimen>
+    <dimen name="text_size3">14sp</dimen>
+    <dimen name="text_size4">12sp</dimen>
+
+</resources>

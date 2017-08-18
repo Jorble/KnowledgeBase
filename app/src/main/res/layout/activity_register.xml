@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical">
+
+    <!--标志栏-->
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/app" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <!-- 登录栏 -->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.giant.knowledgebase.mvp.ui.widget.EditTextWithClear
+            android:id="@+id/usernameEt"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_margin="20px"
+            android:background="@drawable/bg_edit_login_frame"
+            android:drawablePadding="40px"
+            android:drawableStart="@mipmap/user_register_account"
+            android:hint="账号"
+            android:paddingStart="20px"
+            android:textColorHint="#B3B3B3" />
+
+        <com.giant.knowledgebase.mvp.ui.widget.PasswordEditText
+            android:id="@+id/pwdEt"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_margin="20px"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_edit_login_frame"
+            app:start="@mipmap/user_register_password"
+            app:pad="40px"
+            android:hint="输入密码"
+            android:inputType="textPassword"
+            android:paddingEnd="20px"
+            android:paddingStart="20px"
+            android:textColorHint="#B3B3B3" />
+
+        <com.giant.knowledgebase.mvp.ui.widget.PasswordEditText
+            android:id="@+id/pwdEt_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_margin="20px"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_edit_login_frame"
+            app:start="@mipmap/user_register_password"
+            app:pad="40px"
+            android:hint="确认密码"
+            android:inputType="textPassword"
+            android:paddingEnd="20px"
+            android:paddingStart="20px"
+            android:textColorHint="#B3B3B3" />
+
+        <Button
+            android:id="@+id/register_bt"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_margin="20px"
+            android:background="@drawable/selector_btn_text"
+            android:text="注册"
+            android:textColor="@drawable/selector_text_btn"
+            android:textSize="@dimen/text_size2" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <include layout="@layout/bar_title"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>

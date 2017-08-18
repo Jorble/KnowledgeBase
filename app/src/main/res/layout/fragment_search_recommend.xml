@@ -1,0 +1,94 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="40px"
+    android:orientation="vertical"
+    >
+
+    <!-- 历史搜索 -->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/history_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="历史记录"
+                android:textSize="@dimen/text_size3"
+                android:textColor="@color/text_black3"
+                android:layout_alignParentLeft="true"/>
+            <ImageView
+                android:id="@+id/clearHistory_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_clear"
+                android:layout_alignParentRight="true"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <GridView
+            android:id="@+id/history_gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:nestedScrollingEnabled="true"
+            android:numColumns="2"
+            android:verticalSpacing="40px"
+            android:horizontalSpacing="40px">
+
+        </GridView>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <!-- 热点搜索 -->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/hot_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="猜你想搜的"
+                android:textSize="@dimen/text_size3"
+                android:textColor="@color/text_black3"
+                android:layout_alignParentLeft="true"/>
+            <ImageView
+                android:id="@+id/showOrHideHot_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_invisible"
+                android:layout_alignParentRight="true"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <GridView
+            android:id="@+id/hot_gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:nestedScrollingEnabled="true"
+            android:numColumns="2"
+            android:verticalSpacing="40px"
+            android:horizontalSpacing="40px">
+
+        </GridView>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

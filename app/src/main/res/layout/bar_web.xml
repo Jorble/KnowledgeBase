@@ -1,0 +1,46 @@
+<com.zhy.autolayout.AutoRelativeLayout android:layout_width="match_parent"
+    android:layout_height="120px"
+    android:gravity="center_vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/bar_back_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/selector_btn_back"/>
+
+    <ImageView
+        android:id="@+id/bar_close_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/bar_back_iv"
+        android:src="@drawable/selector_btn_close"/>
+
+    <TextView
+        android:id="@+id/bar_title_tv"
+        android:layout_width="500px"
+        android:layout_height="80px"
+        android:textSize="@dimen/text_size1"
+        android:textColor="@color/text_black1"
+        android:gravity="center"
+        android:text="百科"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/bar_refresh_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/selector_btn_refresh"/>
+</com.zhy.autolayout.AutoRelativeLayout>

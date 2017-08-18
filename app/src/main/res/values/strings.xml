@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">知识百科</string>
+
+    <!-- 请求结果 -->
+    <string name="already_last_data">已经是最新数据了</string>
+    <string name="no_more_data">没有更多数据了</string>
+    <string name="request_failed">应该断网了</string>
+
+    <!-- 搜索 -->
+    <string name="search_empty">搜索不能为空</string>
+
+    <!-- 关于我们 -->
+    <string name="about_us">
+        广州极天信息技术股份有限公司（“极天信息”），以语义计算（Computing Meaning）为引擎，
+        以语义网（Ontologies）为载体，以大数据为信源，挖掘数据价值，扩展认知能力，提供智能化信息服务，
+        从而改善并提升商业运转效率及质量。
+        \n\n极天信息拥有业界领先的语义计算技术和产品，在大数据信息挖掘与分析、
+        智能问答、语义搜索、知识管理等领域为运营商、金融、媒体、政府、医疗等机构及企业提供有竞争力的解决方案。
+    </string>
+
+    <string name="contact">
+        官网：www.gzjtit.com
+        \n\n电话：020-89269210
+        \n\n李小姐：13316098166
+        \n\nE-mail：giant@gzjtit.com
+        \n\n地址：中国广东省广州市海珠区广州大道南788号广一园区自编A7
+        \n\n邮编：510300 \n\n
+    </string>
+
+</resources>

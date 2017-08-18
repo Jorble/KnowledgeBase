@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/theme_bg"
+    android:layout_margin="10px"
+    android:orientation="vertical"
+    android:id="@+id/item_ll"
+    >
+
+    <TextView
+        android:id="@+id/history_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5px"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="历史"
+        android:textColor="@color/text_black1"
+        android:textSize="@dimen/text_size3" />
+
+</com.zhy.autolayout.AutoLinearLayout>
